@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+            padding: 10px;
+            height: 300px;
+        }
+    </style>
+    <title>Mondray Acio Lab 2</title>
+    <link rel="icon" href="photos/Photo1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body
+    style=" margin: 0; padding: 0; font-family: 'Poppins', sans-serif; color-scheme: #D4D4D4, #F2A910, #212121, #70602C;">
+    <section class="header">
+        <style>
+            .header {
+                min-height: 100vh;
+                width: 100%;
+                background-image: linear-gradient(rgba(4, 9, 10, 0.7), rgba(4, 9, 10, 0.888)), url(photos/Artboard\ 1.png);
+                background-position: center;
+                background-size: cover;
+                position: relative;
+            }
+
+            nav {
+                block-size: 5px;
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            nav img {
+                width: 150px;
+            }
+        </style>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <style>
+                    .nav-links {
+                        flex: 1;
+                        text-align: right;
+                    }
+
+                    .nav-links ul li {
+                        list-style: none;
+                        display: inline-block;
+                        padding: 8px 12px;
+                        position: relative;
+                    }
+
+                    .nav-links ul li a {
+                        color: whitesmoke;
+                        text-decoration: none;
+                        font-size: 17px;
+                    }
+
+                    .nav-links ul li::after {
+                        content: '';
+                        width: 0%;
+                        height: 2px;
+                        background: #ffffff;
+                        display: block;
+                        margin: auto;
+                        transition: 0.5s;
+                    }
+
+                    .nav-links ul li:hover::after {
+                        width: 100%;
+                    }
+                </style>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#resume">RESUME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <style>
+                .text-box {
+                    width: 90%;
+                    color: #F2A910;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+
+                .text-box h1 {
+                    font-size: 62px;
+                }
+
+                .text-box p {
+                    margin: 10px 0 40px;
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+
+                .hero-btn {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #ffffff;
+                    border: 1px solid #ffffff;
+                    padding: 12px 34px;
+                    font-size: 13px;
+                    background: transparent;
+                    position: relative;
+                    cursor: pointer;
+                }
+
+                .hero-btn:hover {
+                    border: 1px solid #F2A910;
+                    background: #F2A910;
+                    transition: 1s;
+                }
+            </style>
+            <h1>LABORATORY 1</h1>
+            <p style="color: whitesmoke;">By: Mondray S. Acio
+            </p>
+            <a href="about.html" class="hero-btn">Read More</a>
+        </div>
+    </section>
+
+</body>
+
+</html>

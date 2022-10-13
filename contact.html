@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+            padding: 10px;
+            height: 300px;
+        }
+    </style>
+    <title>Mondray Acio Lab 2</title>
+    <link rel="icon" href="photos/Photo1.png" type="image/png">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body
+    style=" margin: 0; padding: 0; font-family: 'Poppins', sans-serif; color-scheme: #D4D4D4, #F2A910, #212121, #70602C;">
+    <section class="header">
+        <style>
+            .header {
+                min-height: 100vh;
+                width: 100%;
+                background-image: url(photos/Artboard\ 3.png);
+                background-position: center;
+                background-size: cover;
+                position: relative;
+            }
+
+            nav {
+                block-size: 5px;
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            nav img {
+                width: 150px;
+            }
+        </style>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <style>
+                    .nav-links {
+                        flex: 1;
+                        text-align: right;
+                    }
+
+                    .nav-links ul li {
+                        list-style: none;
+                        display: inline-block;
+                        padding: 8px 12px;
+                        position: relative;
+                    }
+
+                    .nav-links ul li a {
+                        color: whitesmoke;
+                        text-decoration: none;
+                        font-size: 17px;
+                    }
+
+                    .nav-links ul li::after {
+                        content: '';
+                        width: 0%;
+                        height: 2px;
+                        background: #D4D4D4;
+                        display: block;
+                        margin: auto;
+                        transition: 0.5s;
+                    }
+
+                    .nav-links ul li:hover::after {
+                        width: 100%;
+                    }
+                </style>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#resume">RESUME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>LEAVE A MESSAGE!</h1>
+            <form class="cf">
+                <div class="half left cf">
+                    <input type="text" id="input-name" placeholder="Name">
+                    <input type="email" id="input-email" placeholder="Email address">
+                    <input type="text" id="input-section" placeholder="Section">
+                </div>
+                <div class="half right cf">
+                    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                </div>
+                <input type="submit" value="Submit" id="input-submit">
+            </form>
+
+            <i>
+                <p>Contact me on my socials with the link below or<br>simply drop your messages on the drop box</p>
+            </i>
+            <div>
+                <ul class="contact-icon" style=" position:center; display: flex; justify-content: space-between;">
+                    <div style="padding-left: 45%; padding-right: 45%;">
+                        <a href="mailto:macio@cca.edu.ph" target="_blank"><img src="photos/email.png" height="30px"
+                                width="30px"></a>
+                        <a href="https://www.facebook.com/dayday.cio/" target="_blank"><img src="photos/fb.png"
+                                height="30px" width="30px"></a>
+                        <a href="http://linkedin.com/in/daydaycio" target="_blank"><img src="photos/in.png"
+                                height="30px" width="30px"></a>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>
